@@ -1,0 +1,31 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "./assets/img/icon128.png",
+         "16": "./assets/img/icon16.png",
+         "48": "./assets/img/icon48.png"
+      }
+   },
+   "author": "Marcus OBrien",
+   "background": {
+      "service_worker": "./src/background.js"
+   },
+   "chrome_url_overrides": {
+      "newtab": "./public/index.html"
+   },
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+   },
+   "description": "An extension to highlight the active tab better",
+   "icons": {
+      "128": "./assets/img/icon128.png",
+      "16": "./assets/img/icon16.png",
+      "48": "./assets/img/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlAGPH4fNCNC9hSqdOkxMjP9etBL0U4n891AHnTf0k6tXipy6dWmzbWsxdAt8fFyumrkvBFhN7GVMcqCTsbmRmQjdQPTeMC+U0tn/DUKcLfOV3rEymhugcrWyRYsz4L5G6sCSFc4Y4LUNtPhRE4LsH709wlQffbZvRWHr9jbNfAzVzwSTxKd97PIyklNCu6jZxsaHLcc2PIAQm85Q9x7PzJQq9FplwvTxKOsY7fScTDl9YDGR+bjUlEayGPs+wWHE1MHGSi2qno100yx23vvifr1NuZPES5TAbdGa6BRVpocgFkweTIiDQhpLX/uB2/XZOWMiGOyKdV++qvh+sob2/wIDAQAB",
+   "manifest_version": 3,
+   "name": "Tab Highlighter",
+   "permissions": [ "bookmarks", "storage", "scripting", "webNavigation", "activeTab" ],
+   "update_url": "hhtp://www.bbc.com",
+   "version": "1.0"
+}
